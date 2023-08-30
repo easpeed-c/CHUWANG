@@ -9,6 +9,7 @@ int main(void)
     uint8_t sum = 0;
     for (uint8_t i = 0; i < 6; i++)
     {
+#if 0
         if (i == 5)
         {
             scanf("%x", &data[i]);
@@ -17,6 +18,9 @@ int main(void)
         {
             scanf("%x-", &data[i]);
         }
+#else
+        scanf("%x", &data[i]);
+#endif
     }
     for (uint8_t i = 0; i < 6; i++)
     {
